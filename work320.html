@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景圖片重疊</title>
+    <style>
+        div {
+            width: 200px;
+            height: 150px;
+            border: 1px solid #0000;
+            margin: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+        .a img{
+            position: absolute;
+            width: 120px;
+        }
+        .b {
+            background-image: 
+              url("_1110126wx9.png"),
+              url("id13999249-rose-450x315.jpg");
+            background-size: 60px, 50px;
+            background-repeat: space, round;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <img src="_1110126wx9.png">
+        <img src="id13999249-rose-450x315.jpg">
+    </div>
+    <div class="b"></div>
+
+</body>
